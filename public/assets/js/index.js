@@ -61,6 +61,11 @@ const renderActiveNote = () => {
   } else {
     noteTitle.value = '';
     noteText.value = '';
+
+// *****These two lines are added to the given code to make the placeholders accept new text******
+
+    document.querySelector(".note-title").removeAttribute('readonly');
+    document.querySelector(".note-textarea").removeAttribute('readonly');
   }
 };
 
@@ -102,6 +107,7 @@ const handleNoteView = (e) => {
 
 // Sets the activeNote to and empty object and allows the user to enter a new note
 const handleNewNoteView = (e) => {
+  e.preventDefault();
   activeNote = {};
   renderActiveNote();
 };
