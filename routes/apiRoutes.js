@@ -19,7 +19,7 @@ module.exports = (app) => {
   app.get("/api/notes", (req, res) => {
       
       // Read 'db.json' file 
-      let savedNotes = JSON.parse(fs.readFile("./db/db.json", "utf8"));
+      let savedNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
          
       // Send the read data as "objects" in response to the 'GET' request
       res.json(savedNotes);
@@ -42,7 +42,7 @@ module.exports = (app) => {
       notesData.push(newNotes);
 
       // Writes notes data to 'db.json' file
-      fs.writeFile('./db/db.json', JSON.stringify(notesData));
+      fs.writeFileSync('./db/db.json', JSON.stringify(notesData));
       
       // Send response
       res.json(notesData);
@@ -52,16 +52,16 @@ module.exports = (app) => {
   // API DELETE request
   app.delete("/api/notes/:id", (req, res) => {
 
-      let noteId = req.params.id.toString();
+      let noteId = req.params.id;
 
       // Read data from 'db.json' file
-      let notesData = JSON.parse(fs.readFile("./db/db.json", "utf8"));
+      let notesData = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
 
       // filter data to get notes except the one to delete
-      let newSet = notesData.filter( note => note.id.toString() !== noteId );
+      let newSet = notesData.filter( note => note.id !== noteId );
 
       // Write new data to 'db.json' file
-      fs.writeFile('./db/db.json', JSON.stringify(newSet));
+      fs.writeFileSync('./db/db.json', JSON.stringify(newSet));
 
       // Send response
       res.json(newSet);
