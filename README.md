@@ -3,7 +3,7 @@
 ## **note taker**<br>
 <br>
 
-[https://aranata.github.io/note-taker/](https://aranata.github.io/note-taker/)<br>
+[https://evening-bastion-82312.herokuapp.com/](https://evening-bastion-82312.herokuapp.com/)<br>
 <br>
 <br>
 
@@ -46,7 +46,7 @@ Full views of the home and notes pages <br>
 A short video that shows how the UI works.<br>
 <br>
 
-![weather screen demo](assets/images/note-taker.gif)
+![note taker demo](public/assets/images/note-taker.gif)
 
 <br>
 <br>
@@ -60,7 +60,15 @@ These notes and links are listing some valuable references among others that I u
 
 [https://nodejs.dev/](https://nodejs.dev/)
 
-[https://www.npmjs.com/package//inquirer#prompt](https://www.npmjs.com/package//inquirer#prompt)
+[http://expressjs.com/](http://expressjs.com/)
+
+[https://expressjs.com/en/starter/static-files.html](https://expressjs.com/en/starter/static-files.html)
+
+[https://www.heroku.com/about](https://www.heroku.com/about)
+
+[https://medium.com/@osiolabs/read-write-json-files-with-node-js-92d03cc82824](https://medium.com/@osiolabs/read-write-json-files-with-node-js-92d03cc82824)
+
+[https://insomnia.rest/](https://insomnia.rest/)
 
 [https://shields.io/category/dependencies/](https://shields.io/category/dependencies/)
 
