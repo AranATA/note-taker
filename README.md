@@ -35,10 +35,10 @@ The codebase achieves the following criteria:<br>
 
 ***
 
-A full view of the page <br>
+Full views of the home and notes pages <br>
 <br>
 
-![alt text](assets/images/scrshot.png)
+![alt text](public/assets/images/scrshot.png)
 
 <br>
 <br>

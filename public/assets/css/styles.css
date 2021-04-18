@@ -13,6 +13,14 @@ html, body {
   margin-right: 15px;
   font-size: 1.5rem;
   cursor: pointer;
+}  
+
+.icons i:hover {
+  filter:brightness(150%);
+}
+
+.fas {
+  color:#a7e4f7;
 }
 
 .note-textarea, .note-title {
@@ -26,12 +34,13 @@ html, body {
   resize: none;
   height: calc(100% - 63px);
   padding-top: 15px;
+  font-size: 1.25rem;
 }
 
 .note-title {
   height: 50px;
   margin-top: 13px;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .note-title:read-only, .note-textarea:read-only {
@@ -47,6 +56,9 @@ html, body {
 
 .list-container {
   padding-left: 0;
+  color:rgb(74, 163, 247);
+  font-weight: 700;
+  font-size: 1.15rem;
 }
 
 .list-container .list-group,
